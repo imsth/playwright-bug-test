@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Test</title>
+    </head>
+    <body>
+        <div id="test">TEST</div>
+        <script>
+        document.addEventListener("keydown", (event) => {console.log("keydown"); document.getElementById("test").textContent = 'keydown';});
+        document.addEventListener("keyup", (event) => {console.log("keyup"); document.getElementById("test").textContent = 'keyup';});
+        </script>
+    </body>
+</html>
